@@ -1,5 +1,5 @@
 {
-  description = "Formal Containment project dev";
+  description = "FVProp monorepo project dev";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs";
     parts.url = "github:hercules-ci/flake-parts";
@@ -14,6 +14,8 @@
       systems = [
         "aarch64-darwin"
         "x86_64-linux"
+        "x86_64-darwin"
+        "aarch64-linux"
       ];
       perSystem =
         { pkgs, ... }:

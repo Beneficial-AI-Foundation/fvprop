@@ -1,2 +1,9 @@
+from benchmark.mcp.server import mk_mcp
+
+
 def main() -> None:
-    print("Hello from benchmark!")
+    """
+    Entrypoint for the FVProp benchmark generator MCP server.
+    """
+    mcp = mk_mcp()
+    mcp.run()

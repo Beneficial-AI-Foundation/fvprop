@@ -5,9 +5,13 @@ build/
 dist/
 wheels/
 *.egg-info
+.ruff_cache/
 
 # Virtual environments
-.venv
+.venv/
 
-# direnv, shell
+# Shell, direnv
 .direnv/
+
+# Lean build artifacts
+.lake/
