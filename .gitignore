@@ -15,3 +15,9 @@ wheels/
 
 # Lean build artifacts
 .lake/
+
+# Benchmark generated
+/benchmark/artifacts/generation
+# Data, logs, etc.
+/benchmark/data/
+/benchmark/logs/

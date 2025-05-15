@@ -1,0 +1,15 @@
+{"version": "1.1.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"url": "https://github.com/leanprover-community/plausible",
+   "type": "git",
+   "subDir": null,
+   "scope": "",
+   "rev": "304c5e2f490d546134c06bf8919e13b175272084",
+   "name": "plausible",
+   "manifestFile": "lake-manifest.json",
+   "inputRev": "v4.20.0-rc2",
+   "inherited": false,
+   "configFile": "lakefile.toml"}],
+ "name": "«temp-artifacts»",
+ "lakeDir": ".lake"}

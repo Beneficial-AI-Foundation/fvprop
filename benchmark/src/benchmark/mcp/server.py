@@ -2,7 +2,7 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 from benchmark.mcp.tools.lake import lakeproj_copy_temp, lake_build
 
-LAKE_DIR = Path.cwd().parent / "artifacts" / "lake-template"
+LAKE_DIR = Path.cwd() / "artifacts" / "temp-lakeproj"
 
 
 def mk_mcp() -> FastMCP:
@@ -17,8 +17,8 @@ def mk_mcp() -> FastMCP:
         Check if the lake executable is available and can be run.
         """
         tmpdir = lakeproj_copy_temp(LAKE_DIR)
-        with open(tmpdir / "Basic.lean", "w") as f:
-            f.write(lean_code)
+        with open(tmpdir / "TempArtifacts" / "Basic.lean", "w") as basic:
+            basic.write(lean_code)
         result = lake_build(tmpdir)
         print(result.returncode)
         pass
